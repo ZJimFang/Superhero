@@ -20,7 +20,7 @@ module.exports =(env,options)=> {
                     }
                 },
                 {
-                    test: /\.css/,
+                    test: /\.(scss|css)/,
                     use: [
                         mode === 'production'? MiniCssExtractPlugin.loader: 'style-loader',
                         'css-loader',

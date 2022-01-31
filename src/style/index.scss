@@ -1,0 +1,32 @@
+@import 'https://fonts.googleapis.com/css2?family=Comforter&family=Supermercado+One&display=swap';
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    background: #9796f0; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #fbc7d4, #9796f0); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+        to right,
+        #fbc7d4,
+        #9796f0
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#root{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50px repeat(5,1fr) 50px ;
+    grid-template-rows: 50px repeat(5,1fr) 100px ;
+}

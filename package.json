@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/ZJimFang/Superhero#readme",
   "dependencies": {
+    "bootstrap": "^5.1.3",
     "css-loader": "^6.5.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
