@@ -1,10 +1,18 @@
-import React from "react";
+import { React } from "react";
 import '../style/Button.scss';
 
-function Button(){
-    return(
-        <button type="button" className="btn btn-primary button">Pick one</button>
+const Button = ({ setData, isFetching }) => {
+    async function fetchData() {
+        isFetching.current = true
+        //pick one
+        const number = Math.floor(Math.random() * 731) + 1;
+        const res = await fetch(`https://www.superheroapi.com/api.php/4693992047364448/${number}`)
+        const data = await res.json();
+        setData(data)
+    }
+    return (
+        <button className="btn btn-primary Button" onClick={fetchData}>Pick one</button>
     )
 }
 
-export {Button}
+export { Button }

@@ -1,14 +1,19 @@
-import React from "react";
+import { useRef, useState, useEffect, React } from "react";
 import { Card } from "./Card.jsx";
-import { Button } from "./Button.jsx";
+import { Button } from "./Button.jsx"
 
-function App(){
-    return(
+const App = () => {
+    const isFetching = useRef(false);
+    const [data, setData] = useState([]);
+
+    return (
         <>
-            <Card />
-            <Button />
+            <Card data={data} isFetching={isFetching} />,
+            <Button setData={setData} isFetching={isFetching} />
         </>
     )
 }
 
-export {App}
+
+
+export { App }
