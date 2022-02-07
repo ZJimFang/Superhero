@@ -8,7 +8,7 @@ const App = () => {
 
     return (
         <>
-            <Card data={data} isFetching={isFetching} />,
+            <Card data={data} isFetching={isFetching} />
             <Button setData={setData} isFetching={isFetching} />
         </>
     )
