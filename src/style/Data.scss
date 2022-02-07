@@ -76,3 +76,12 @@
         flex-direction: column;
     }
 }
+
+@media (max-width: 415px) {
+    img {
+        width: 200px;
+    }
+    .detail {
+        grid-row: 5/6;
+    }
+}

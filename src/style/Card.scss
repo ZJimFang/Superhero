@@ -43,3 +43,22 @@ div.card {
         opacity: 0;
     }
 }
+
+@media (max-width: 415px) {
+    div.card {
+        grid-column: 1 / 6;
+
+        & .arrow {
+            display: none;
+        }
+    }
+    #root .btn {
+        z-index: 100;
+        margin: auto;
+        margin-top: 80px;
+        width: 150px;
+        height: 60px;
+        grid-row: 6/7;
+        grid-column: 2/5;
+    }
+}
